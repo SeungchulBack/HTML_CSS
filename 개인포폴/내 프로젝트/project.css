@@ -1,0 +1,240 @@
+
+
+.Home{
+    background-color : #f1d8c7;
+}
+
+.Information{
+    background-color : #cdfacb;
+}
+
+.Technology{
+    background-color: rgb(195, 190, 245);
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction:column;
+}
+
+/*navigator*/
+
+.navigator{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul{
+    margin:0;
+}
+/*site name 속성 변경 */
+.site-name{
+    margin:0;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    color:#f7f6f2;
+}
+
+.site-name2{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    color:#f7f6f2;
+}
+
+.site-name3{
+    margin:0;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    color:#f7f6f2;
+}
+
+/* 상단 메뉴바 변경 */
+.nav-menu{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+li{
+    display: inline;
+    align-self:center;
+    margin:0;
+    margin-left: 15px;
+}
+
+a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+a:hover{
+    color:white;
+    transition: 0.3s;
+}
+
+
+/*dashboard*/
+.dashboard{
+    display:flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.dashboard2{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.dashboard3{
+    display:flex;
+    flex-direction: column;
+    margin-top : 5px;
+}
+
+
+/* 글자 깜빡임 변경 */
+.sample{ /* 백승철입니다.*/
+    background-color: greenyellow;
+    -webkit-text-stroke: 1px black;
+
+}
+
+.sample:hover{
+    background-color: transparent;
+    color: white;
+    transition: none;
+}
+
+.highlight {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.highlight:hover{
+    background-color: rgb(161, 235, 213);
+    transition :none; /* 트랜지션 효과 */
+}
+
+.highlight2 {
+    color : white;
+    -webkit-text-stroke: 1px black;
+}
+
+.highlight2:hover{
+    background-color: yellow;
+    transition: none;
+}
+
+.highlight3{
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.highlight3:hover{
+    background-color: rgb(255, 194, 250);
+    transition: none;
+}
+.type1:hover{
+    background-color: rgb(149, 166, 243);
+}
+
+.type2:hover{
+    background-color: rgb(253, 255, 146);
+}
+
+
+
+
+
+/* 한글 / 영문 자막 변경 */
+.Korea-Comment{
+    font-family: 'Noto Sans KR',sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.english-comment{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+
+    letter-spacing: -0.5px;
+}
+
+/* recent menu */
+.resent_menu {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(177, 177, 177);
+
+    text-align: right;
+    margin-top: 100px;
+}
+
+.github{
+    font-family: 'Montserrat',sans-serif;
+    font-size:20px;
+    font-weight: 800;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
