@@ -1,7 +1,6 @@
 
-
 .Home{
-    background-color : #f1d8c7;
+    background-color : #e2e2e2;
 }
 
 .Information{
@@ -147,10 +146,6 @@ a:hover{
     background-color: rgb(253, 255, 146);
 }
 
-
-
-
-
 /* 한글 / 영문 자막 변경 */
 .Korea-Comment{
     font-family: 'Noto Sans KR',sans-serif;
@@ -181,7 +176,7 @@ a:hover{
 .github{
     font-family: 'Montserrat',sans-serif;
     font-size:20px;
-    font-weight: 800;
+    font-weight: 400;
 }
 .footer{
     display: flex;
@@ -189,6 +184,28 @@ a:hover{
     align-items: center;
 }
 
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    border-bottom : 2px solid black;
+}
+
+.links>a {
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 30px;
+} /*links : 부모 / a : 자식 제일 가까운 부모가 a자식들의 속성들을 변경 가능 */
+
+.english2{
+    font-family: 'Nanum Pen Script';
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+
+    margin : 0;
+    
+}
 
 
 
