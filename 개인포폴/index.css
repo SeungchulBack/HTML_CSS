@@ -1,0 +1,12 @@
+.Home {
+  background-color: #ebf0ff;
+}
+
+/*site name 속성 변경 */
+.site-name {
+  margin: 0;
+  font-family: "Montserrat";
+  font-size: 40px;
+  color: #e4cd71;
+  text-align: center;
+}

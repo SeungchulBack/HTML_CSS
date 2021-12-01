@@ -1,0 +1,17 @@
+Oracle SQL
+connect sys/1234 as sysdba ==> sys계정으로 접근
+
+alter user hr idenified by hr account unlock ==> hr계정 활성화
+
+cmd
+
+cd \ > sqlplus > id/password 접속완
+
+select * from tab; ==> 정렬이 되지 않은 모든 tab list 출력
+
+desc tab(이름) ==> 해당 테이블의 컬럼내용 출력
+
+C:\oraclexe\app\oracle\product\11.2.0\server\bin - 쿼리가 저장 되는 기본 위치
+
+Set의 설정 파일이 저장 되는 위치
+C:\oraclexe\app\oracle\product\11.2.0\server\sqlplus\admin\glogin.sql

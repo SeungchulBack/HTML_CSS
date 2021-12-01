@@ -1,0 +1,36 @@
+https://azure.microsoft.com/ko-kr/free/  = 1년간 무료 사용
+
+portal.azure.com => Azure(MS Cloud Service)
+https://azure.microsoft.com/ko-kr/
+
+실습 다한후 반드시 서비스 삭제
+
+리소스 그룹 : 
+-146개의 리소스(서비스)를 효율적으로 관리를 위해서 사용
+
+- VM을 생성하면 많은 부가 서비스들이 생성
+
+Cloud에서 VM설치후 xrdp를 통해서 접속 
+
+sudo yum -y install dnf 		         <== dnf 설치 
+sudo yum -y groupinstall "Server with GUI"      <== Linux GUI 설치 
+
+xrdp 	<== Linux를 windows 원격 데스크탑으로 접속해서 GUI 
+
+방화벽 설정 < == TCP 3389 포트 오픈 
+
+-xrdp 설치 
+sudo dnf install epel-release		<== xrdp를 설치하기 위한 레파지토리 변경
+sudo dnf install xrdp 		<== xrdp 설치
+
+--리부팅시 서비스 자동 시
+sudo systemctl enable xrdp --now
+sudo systemctl restart xrdp		<== xrdp 서비스 시작
+
+-- 방화벽 설정 (내부에서 설정 하는 것이 아니라 외부서비스에서 설정함 )
+	<<클라우드에서는 클라우드 서비스에서 방화벽 설정>> : <<네트워크 서비스>>
+
+sudo yum groupinstall -y "Xfce"
+sudo echo "xfce4-session" > ~/.Xclients
+sudo chmod a+ ~/.Xclients
+sudo shutdown -r now 			<== 리부팅

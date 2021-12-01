@@ -1,0 +1,27 @@
+SQL plus 명령어
+
+connect sys/1234 as sysbda : sys 계정을 1234 비밀번호로 최고관리자계정에 접근
+
+connect hr/hr : hr 계정을 hr 비밀번호로 접속
+
+select * from tab; : 모든 테이블 출력(정렬되지않음)
+
+set linesize 50 : 라인 사이즈 조절 >> 50바이트 까지 출력
+
+set pagesize 5 : 페이지 사이즈 조절 >> 5라인으로 설정/1페이지 (첫번째는 공백라인 + 4라인)
+
+List(l) : 버퍼(메모리)에 저장된 명령어 출력 >> 내가 넣었던 명령어를 출력
+
+
+Run(r) : 버퍼에 저장된 명령어를 출력하면서 실행 
+
+/ : 버퍼에 저장된 명령어를 출력시키지 않고 실행
+
+save : 버퍼에 저장된 명령어를 sql 파일(쿼리)로 저장, C:\oraclexe\app\oracle\product\11.2.0\server\bin (기본경로),
+	save "C:\Temp\samples3.sql" << 와 같이 경로 저장가능 
+
+save myquery -> 쿼리 저장
+edit myquery.sql -> 쿼리 수정창 열기( 메모장)
+@자기가 저장한 쿼리.sql -> 스크립트 파일에 실행
+@ : 특정 스크립트 실행
+@@ : 특정 경로에서 실행

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학사 일정 페이지</title>
+    <style>
+      body {
+        position: absolute;
+        left: 10%;
+        transform: translateX(-10%);
+      }
+      h3 span {
+        border-bottom: solid 5px #b9d1b1;
+        color: #a0b997;
+        padding-bottom: 3px;
+      }
+      h3 {
+        border-bottom: solid 5px #f0ebeb;
+        padding-bottom: 3px;
+      }
+      .sunday {
+        color: red;
+      }
+      .saturday {
+        color: blue;
+      }
+      table,
+      tr,
+      td {
+        border: solid 1px #bbb0b0;
+        table-layout: fixed;
+        vertical-align: top;
+        text-align: left;
+        padding: 2px;
+        font-size: 13px;
+      }
+      th {
+        vertical-align: middle;
+        text-align: center;
+        border-top: solid 2px #bbb0b0;
+        border-left: solid 1px #bbb0b0;
+        font-size: 14px;
+        background-color: rgb(240, 245, 244);
+      }
+      .tablesize {
+        width: 650px;
+        margin-top: 20px;
+      }
+      .tablesize .thsize {
+        height: 25px;
+      }
+      .tablesize .tdsize {
+        height: 65px;
+      }
+      form input {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3><span>학사일정 &emsp;&emsp;</span></h3>
+      <form><input type="month" value="2017-06" /></form>
+      <div>
+        <table class="tablesize">
+          <tr class="thsize">
+            <th class="sunday">일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <th class="saturday">토</th>
+          </tr>
+          <tr class="tdsize">
+            <td class="sunday"></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td class="saturday">5</td>
+          </tr>
+          <tr class="tdsize">
+            <td class="sunday">6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9<br />특강</td>
+            <td>10</td>
+            <td>11</td>
+            <td class="saturday">12</td>
+          </tr>
+          <tr class="tdsize">
+            <td class="sunday">13</td>
+            <td>14<br />기말고사</td>
+            <td>15<br />기말고사</td>
+            <td>16<br />기말고사</td>
+            <td>17<br />기말고사</td>
+            <td>18<br />기말고사</td>
+            <td class="saturday">19</td>
+          </tr>
+          <tr class="tdsize">
+            <td class="sunday">20</td>
+            <td>21<br />하계방학</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td class="saturday">26</td>
+          </tr>
+          <tr class="tdsize">
+            <td class="sunday">27</td>
+            <td>28</td>
+            <td>29<br />MT</td>
+            <td>30<br />MT</td>
+            <td>31</td>
+            <td></td>
+            <td class="saturday"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

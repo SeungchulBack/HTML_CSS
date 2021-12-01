@@ -1,0 +1,6 @@
+ex) .top + tab키 => <div class = "top"></div> 자동생성
+ex) ul>li*5>a + tab키 => <ul> 밑  <li><a href=""></a></li>자동 생성 * 5개만큼
+구글 이외 외부 폰트 적용 방법 : css에 @font-face {
+  font-family: ex)abster;
+  src: url((ex)font/abster-webfont.woff) format("woff");
+}

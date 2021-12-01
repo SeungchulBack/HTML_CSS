@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개 변수와 인자</title>
+</head>
+<body>
+    <script>
+        //자바스크립트는 자바와 같이 메소드 오버로딩이 작동 되지않는다.
+        function add( ) {
+            var sum = 1;
+            return sum;
+        }
+        function add(x) {
+            var sum = x + 1;
+            return sum;
+        }
+        function add(x,y) {
+            var sum = x + y;
+            return sum;
+        }
+        function add(x, y ,z) {
+            var sum = x + y + z;
+            return sum;
+        }
+
+        var r0 = add();
+        var r1 = add(1);
+        var r2 = add(2,3);
+        var r3 = add(4,5,6);
+        var r4 = add(7,8,9,10); //매개 변수가 넘은 함수 호출
+
+        document.write("함수 호출 인자 없음" + r0 + "<p/>");
+        document.write("함수 호출 인자 부족" + r1 + "<p/>");
+        document.write("함수 호출 인자 부족" + r2 + "<p/>");
+        document.write("함수 호출 인자 호출" + r3 + "<p/>");
+        
+    </script>
+</body>
+</html>

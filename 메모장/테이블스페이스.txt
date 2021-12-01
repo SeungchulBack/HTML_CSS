@@ -1,0 +1,6 @@
+-이름 : DB01_DATA
+-테이블 스페이스 유형 : 영구 <= Default TableSpace
+-디렉토리 : C:\Oracle_DataBase
+-파일크기 : 100MB
+-자동확장 : 100MB
+-최대크기 : 2GB
