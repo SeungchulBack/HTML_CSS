@@ -1,0 +1,88 @@
+<비교연산자, 비교문> < > <= >= == !=
+*if문/else if / else
+
+const age = 19;
+if(age>19) { 
+    console.log('환영합니다');
+}
+else if(age===19) {
+    console.log('수능 잘치세요');
+}
+else {
+    console.log('안녕히 가셰요');
+}
+
+<반복문 Loop>
+<for(초기값   조건  코드실행후 작업)> -- 명확한 횟수가 정해져있으면 for
+
+for(let i=0; i< 10; i++) {
+    //반복할 코드
+}
+
+//1부터 10까지 출력
+for(let i =0; i< 10; i++) {
+    console.log(i)
+}
+---------------------------------
+<while> -- 명확하게 정해져있지 않으면 while
+
+let i =0;
+while(i<10) {
+    console.log(i);
+    i++;
+}
+
+<do..while>
+let i =0;
+do {
+    //코드
+    i++;
+} while(i <10)
+
+<break,continue>
+break :멈추고 빠져 나옴
+continue : 멈추고 다음 반복으로 진행
+
+while(true) { //while(true) => 무한 반복
+    let answer = confirm('계속 할까요?'); //확인누르면 계속 반복 / 취소누르면 !answer
+    if(!answer) {
+        break;
+    }
+}
+
+//i는 0이고 i가 10보다 작을동안 짝수만 출력되게 하라
+for(let i =0; i<10; i++) { 
+    if(i%2) {
+        continue;
+    }
+    console.log(i)
+}
+
+-----------------------
+switch -- case가 다양할때 간결하게 쓰이기 좋음
+
+//사과 : 100원 , 바나나 : 200원,키위 : 300원,멜론:400원,수박:500원
+//사고 싶은 과일을 물어보고 가격 알려주기
+
+let fruit = prompt('무슨 과일 살거야?');
+
+switch(fruit) {
+    case '사과' :
+        console.log('100원 입니다');
+        break;
+    case '바나나' :
+        console.log('200원 입니다');
+        break;
+    case '키위' :
+        console.log('300원 입니다');
+        break;
+    case '멜론' :
+        console.log('400원 입니다');
+        break;
+    case '수박' :
+        console.log('500원 입니다');
+        break;
+
+    defalut :
+        console.log('그런 과일은 없습니다.');
+}

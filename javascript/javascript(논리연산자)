@@ -1,0 +1,43 @@
+<논리 연산자> ||(or) , &&(and) , !(not)
+1. || : 여러개 중 하나라도 true면 true 
+        즉, 모든값이 false일때만 false
+2. && : 모든 값이 true면 true  즉, 하나라도 false면 false
+3. ! : true면 false / false면 true
+
+const name = "Mike";
+const age = 30;
+
+if(name=='Mike' && age > 19) { //실패 만약 ||이면 통과
+  console.log('통과');
+}
+else {
+  console.log('실패');
+}
+
+//not
+ex) 나이를 입력받아 성인이 아니면 돌아가 라고 작성하시오
+const age = prompt('나이가??');
+const isage = age>19;
+
+if(!isage){
+  console.log('돌아가..');
+}
+else {
+  console.log('들어와..');
+}
+
+//우선순위
+//남자이고, 이름이 Mike이거나 성인이면 통과
+
+const gender = "F";
+const name = 'Jane';
+const isage = true;
+
+if(gender=='M' && name=='Mike'|| isage) { //결과는 통과 and가 or보다 우선적으로
+                                        //검사를 받기때문에 and먼저 검사 받다가
+                                        //or를 검사할때 성인이기 때문에 다 통과
+  console.log('통과');
+}
+else {
+  console.log('돌아가')
+}

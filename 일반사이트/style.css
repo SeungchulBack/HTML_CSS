@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslateblue;
+    height: 100vh;
+    background-image: url('imgs/trees-g97c3fe626_1920.png');
+    background-repeat : no-repeat;
+    background-size : cover;
+   
+}
+
+.nav-menu {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    top:10%;
+    left: 80%;
+  }
+
+  
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    transition: 0.3s;
+  }
+  
+.wrap{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+}
+
+.material-icons{
+    font-size: 10rem;   
+}
+
+.lg-text{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sm-text{
+    font-size: 1.5rem;
+}
+
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+
+/* 커서처럼 보이기 : p태그 끝에 커서처럼 보이게 함 하지만 p태그 자체가 블록성질을 가지고 있기 때문에 부모인
+dynamic을 inline-block를 통해서 성격을 바꿔야함(텍스트가 줄어든 만큼 p태그의 넓이도 자연스럽게 줄어듬  */
+#dynamic::after{  
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+}
+
+#dynamic.active::after{
+    display: none;
+}
+

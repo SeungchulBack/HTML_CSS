@@ -1,0 +1,93 @@
+<대화상자>
+1. alert : 알려줌 
+2. prompt : 입력 받음
+3. confirm : 확인 받음
+
+const name = prompt("이름을 입력하세요"); =>이름을 입력하세요 라는 창이 뜸
+alert("환영합니다," + name + "님"); => 이름을 입력하면 name에 저장이 되면서 환영합니다 xxx님 라고 뜸
+alert(`안녕하세요,${name}님. 환영합니다`); // 백틱 ``
+const isAdult = confirm("당신은 성인입니까?"); => 성인입니까? 사용자한테 확인을 받는다.
+console.log(isAdult);
+
+//단점
+1. 스크립트 일시 정지
+2. 스타일링 x
+
+<형변환 type Conversion>
+=> "Hello" + "Wolrd"= "Hello World"
+=> 100 + 200 = 300
+=> "100" + 200 = ?
+*
+String() => 문자형으로 변환
+Number() => 숫자형으로 변환
+boolean() => 불린형으로 변환
+*
+
+const math = prompt("수학 점수는?"); 
+const eng = prompt("영어 점수는?");
+const result = (math + eng) / 2;// => * / 우선순위로 계산되기 때문에 ( )붙여줄것
+console.log(result); // (10점 + 10점) / 2 => 1010 / 2 => 505
+
+//"1010" / 2 => 505 (문자형 / 숫자) 인데 왜 /2 는 정상적으로 연산된 이유는
+    /2 같은 경우는 자동형 변환이라고 해서 자동으로 숫자로 변환해서 연산된다.
+
+//prompt 으로 입력받은 값은 문자형으로 인식
+
+const math = 90;
+const eng = 90;
+const result = (math + eng) / 2;
+console.log(result); => 90;
+
+*String() = ()안에 있는 것은 문자형으로 변환
+
+console.log(
+    String(3)  => "3"
+    String(true) "true"
+    String(false) "false"
+    String(null) "null"
+    String(underfined) "underfined"
+)
+
+*Number() = ()안에 있는 것은 숫자형으로 변환
+보통 사용자으로부터 입력받은 값이 문자형일 경우 자주 사용된다.
+console.log(
+    Number("1234") => 1234
+    Number("1234dsfasfd") => Nan
+    Number(true) => 1
+    Number(false) => 0
+    Number(null) => 0
+    Number(underfined) => Nan
+
+    Number(0) => false
+    Number('0') => true
+    Number('') => false
+    Number('  ') => true
+)
+
+*Boolean
+=> false만 기억하면됨
+숫자0
+빈문자열 ""
+null
+underfined
+Nan
+일 때 false로 나옴 이외에는 다 true
+
+<연산자>  + - * / %
+% : 홀수 : X % 2 = 1 / 짝수 : Y % 2 =0
+ex)어떤 값이 들어와도 5를 넘기면 안되면 x % 5 = 0~4사이의 값만 반환
+
+거듭제곱 : const num = 2 ** 3 => console.log(num); //8
+
+//연산자 줄여서 쓰기
+let num = 10;
+//num = num + 5;
+num += 5; (+외에 - / % 가능)
+
+console.log(num); => 15;
+
+//증가 연산자, 감소 연산자
+let num = 10;
+let result = num++; => 10 증가시키기전의 값을 result에 넣음
+let result = ++num; => 11 증가시킨값을 result에 넣음
+console.log(result); 

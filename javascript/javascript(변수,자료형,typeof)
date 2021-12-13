@@ -1,0 +1,70 @@
+<변수>
+const : 절대로 바뀌지 않는 상수 / 수정x
+자바스크립트에서 변수를 선언 할때 변하지 않는 값 : const
+변할수 있는 값은 let으로 선언
+ex) let name = "mike"; 
+    name = "kim";
+1. 변수는 문자,숫자 $와 _만 사용 : const MY_HOME = "...";
+                                    let_=1;
+                                    let$ = 3;
+2. 첫글자는 숫자가 될수 없다. let 1stGrade ='A+'; x
+3. 예약어 x : let let=99;
+4. 가급적 상수는 대문자 : const MAX_SIZE = 99;
+5. 변수명은 읽기 쉽고 이해 할수 있게 
+
+<자료형>
+*백틱 : ` 기호이다. 
+=> 줄바꿈을 할 수 있다.
+=> ${}사이에 변수나 연산등 삽입 가능(연산결과는 문자열로 자동 변환된다.)
+
+const name = "mike"; //문자형 string
+const name1 = 'm\ike'; => 역슬래쉬 앞에 문자는 특수문자로 해석
+const name2 = `mike`; => 백틱 : 느낌표 옆에 있는 ` 
+
+console.log(1+2); //더하기
+console.log(10-3); //빼기
+console.log(3*2); //곱하기
+console.log(6/3); //나누기
+console.log(6%4); //나누고 난 나머지 값
+
+<boolean>
+const a = true; //참
+const b = false;//거짓
+
+const name="mike";
+const age = 30;
+
+console.log(name=='mike'); => true
+console.log(age>40);  => false
+
+<null과 underfined>
+null = 존재하지 않는 값
+underfined = 값이 할당되지 않음
+
+<typeof 연산자>
+=> 다른 개발자가 어떤 타입으로 작성했는지 알아야하거나
+=> API 통신들을 통해 받아온 데이터를 type에 따라 다른 방식으로 처리할때 사용
+const name = "Mike";
+
+console.log(typeof 3);  => number
+console.log(typeof name); => string
+console.log(typeof true); => boolean
+console.log(typeof "xxx"); => string
+console.log(typeof null); =>object(객체형)
+console.log(typeof underfined); =>underfined
+
+const name = "Mike";
+
+const a ="나는 ";
+const b =" 입니다.";
+
+console.log(a + name + b); => "나는 Mike 입니다." 
+//문자형과 문자형 더하면 하나의 문자로 합침
+
+const age = 30; //number
+console.log(a + age + "살" + b); => "나는 30살 입니다."
+//숫자형과 문자형 합치면 문자형으로 변경된다.
+
+
+
+

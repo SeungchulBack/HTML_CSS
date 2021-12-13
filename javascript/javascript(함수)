@@ -1,0 +1,107 @@
+<함수 function> --유지보수가 쉽다.
+1. 한번에 한 작업에 집중
+2. 읽기 쉽고 어떤 동작인지 알수있게 네이밍
+ex) showError == 에러를 보여줌
+    getName = 이름을 얻어옴
+    createUserData = 유저데이터 생성
+    checkLogin =로그인 여부 체크
+
+함수      함수명(매개변수)
+function sayHello(name){
+    console.log(`Hello, ${name}`);
+}
+
+//함수 작성 ()안에 매개변수없을수도 있고 여러개면 ,를 통해 구분
+function showError(){
+    alert('에러가 발생했습니다. 다시 시도해주세요');
+}
+showError();
+
+//매개변수가 있는 함수
+function sayHello(name){
+    const msg = `Hello, ${name}`;
+    console.log(msg);
+}
+sayHello('Mike');
+sayHello('Tom');
+
+---------매개변수가 없을때----------
+function sayHello() { //let으로 쓴 이유는 msg가 달라질수있기 때문
+    //console.log(name) => 찍어보면 underfined가 나온다.
+    //if(underfined) ==> false이기 때문에 못들어가고 msg만 출력된다.
+
+    let msg = `Hello`;
+    if(name) { 
+        msg = `Hello, ${name}`;
+    }
+    console.log(msg);
+}
+sayHello(); ==> 결과값은 Hello만 나옴
+
+function sayHello() { 
+    let msg = `Hello`; //let은 함수 안에서만 사용이 가능함(==지역변수)
+    if(name) { 
+       msg += `, ${name}`; ==> msg에 name더해서 다시 msg에 입력됨.
+    }
+    console.log(msg);
+}
+sayHello();
+sayHello('Mike'); ==> Hello, Mike 
+console.log(msg) => 오류남 msg를 찾지 못한다.(let이 함수안에서만 적용되기때문)
+
+----------let을 함수 밖으로---------------
+
+let msg = `Hello`; (전역변수)
+
+function sayHello() { 
+     if(name) { 
+       msg += `, ${name}`; ==> msg에 name더해서 다시 msg에 입력됨.
+    }
+    console.log(msg);
+}
+
+sayHello('Mike');
+console.log(msg) => Hello, Mike
+
+
+-----------------------------------------
+//OR
+
+function sayHello(name) {
+    let newName = name || 'friend';
+    let msg = `hello, ${newName}`;
+    console.log(msg);
+}
+sayHello(); ==> Hello , friend //매개변수가 없기때문에 frined가 들어감
+sayHello('Jane'); ==> Hello, Jane //매개변수 Jane이 있기 때문에 Jane이 들어감
+
+=================더 간결하게 표현====================
+function sayHello(name = 'friend') {
+    let msg = `Hello, ${newName}`
+    console.log(msg);
+}
+sayHello();
+sayHello('Jane');
+
+-------------------------------------
+//return으로 값 반환
+function add(num1, num2) {
+    return으로 num1 + nume2;
+}
+const result = add(2,3);
+console.log(result);
+
+--------------------------------------
+함수 선언문 vs 함수 표현식
+
+//sayHello(); 위로 올려서 실행해도 동작한다.
+function sayHello(){
+    console.log('Hello');
+} 
+sayHello(); //함수 선언문 : 어디서든 호출 가능
+
+
+let sayHello = function() {
+    console.log('Hello');
+} 
+sayHello(); //함수 표현식 :
